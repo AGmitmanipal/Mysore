@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/src/style.css">
+  <title>Vite App</title>
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="left nav-item">
+      <img src="/logo.svg" alt="logo" class="logo" />
+      <span class="site-name">Mysore Hope Center</span>
+    </div>
+
+    <div class="hamburger" onclick="toggleMenu()">
+      &#9776;
+    </div>
+
+    <nav class="nav" id="nav-menu">
+      <div class="nav-item service-group" onclick="toggleServices()">
+        <span>Services</span>
+        <img src="/down arrow.svg" class="arrow" alt="arrow" />
+      </div>
+      <div class="nav-item">Home</div>
+      <div class="nav-item">Ministries</div>
+      <div class="nav-item">Community</div>
+      <div class="nav-item">About us</div>
+    </nav>
+  </header>
+  <div class="service-panel" id="service-panel">
+        <h3>Sunday Worship Timings:</h3>
+        <ul>
+          <li>Hindi: 7 AM</li>
+          <li>English: 9 AM</li>
+          <li>Kannada: 7 AM and 11 AM</li>
+          <li>Tamil: 9 AM</li>
+          <li>Telugu: 11 AM</li>
+        </ul>
+  </div>
+  <div class="page">
+    <img id="bg" src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA4L3Jhd3BpeGVsX29mZmljZV8zNV9jaW5lbWF0aWNfcGhvdG9ncmFwaHlfb2ZfYV9jaHVyY2hfY2xlYW5fbWluaV9hM2U0ZmZhYy1kMjUxLTQxNDUtODcwYi1iNDYyYzA5MzBhZTlfMS5qcGc.jpg" alt="background">
+    <div id="worship_text">Worship At MHC!</div>
+    <div class="btns">
+      <div class="about_btn">About us</div>
+      <div class="ministries_btn">Ministries</div>
+    </div>
+  </div>
+  <div class="afterbody">
+    <div class="join1">Join Us for Worship</div>
+    <div id="join2">We gather every week to worship, pray, and grow together. Find a service that fits you.</div>
+    <div class="boxes">
+    <div class="worship-timings">
+      <h3>Sunday Worship Timings:</h3>
+      <div>Hindi: 7 AM</div>
+      <div>English: 9 AM</div>
+      <div>Kannada: 7 AM and 11 AM</div>
+      <div>Tamil: 9 AM</div>
+      <div>Telugu: 11 AM</div>
+    </div>
+    <div class="prayer-section">
+      <h1>Prayer and Praise</h1>
+      <p class="subtitle">A special evening of prayer and worship.</p>
+    
+      <div class="schedule">
+        <p><strong>Second Sunday</strong></p>
+        <p class="time">5:30 PM to 7 PM</p>
+    
+        <p><strong>Every Wednesday</strong></p>
+        <p class="time">6 PM</p>
+      </div>
+    </div>
+    </div>
+  </div>
+  <footer class="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <img src="/logofooter.svg" alt="Mysore Hope Center Logo" class="footer-logo">
+      <p class="footer-title">MYSORE HOPE CENTER</p>
+      <div class="footer-socials">
+        <a href="#"><img src="/insta.svg" alt="Instagram" /></a>
+        <a href="#"><img src="/yt.svg" alt="YouTube" /></a>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <div class="footer-column">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Our services</a></li>
+          <li><a href="#">Ministries</a></li>
+          <li><a href="#">Our community</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Discover</h4>
+        <ul>
+          <li><a href="#">Our beliefs</a></li>
+          <li><a href="#">Our culture and values</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <hr class="footer-divider" />
+
+  <p class="footer-disclaimer">
+    SPECIAL ADVISORY: Jesus Christ, His teachings and the teachings of the Bible are for all people. When attending MHC church services, events and using MHC's resources (including this website), you are doing so by your free choice and free will; being aware that MHC helps strengthen people's faith in Jesus Christ, His teachings and the teachings of the Bible.
+  </p>
+</footer>
+
+</body>
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById("nav-menu");
+    menu.classList.toggle("show");
+  }
+  function toggleServices() {
+    const panel = document.getElementById("service-panel");
+    panel.style.display = panel.style.display === "block" ? "none" : "block";
+  }
+  function toggleServices() {
+  const panel = document.getElementById("service-panel");
+  panel.classList.toggle("open");
+}
+</script>
+
+
+</html>
